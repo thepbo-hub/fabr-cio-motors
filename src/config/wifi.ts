@@ -8,5 +8,5 @@
  *   a mensagem de "Configuração pendente pela loja", conforme especificado.
  */
 
-export const WIFI_SSID = "FABRICIO MOTORS CLIENTE";
-export const WIFI_PASSWORD = "fabriciomotors";
+export const WIFI_SSID = "Fabricio Motors 5g";
+export const WIFI_PASSWORD = "Carr@96760811";
