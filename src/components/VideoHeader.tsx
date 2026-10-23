@@ -95,8 +95,8 @@ export const VideoHeader: React.FC<VideoHeaderProps> = ({
         )}
       </div>
 
-      {/* Linha de reflexo dourada extremamente sutil na transição suave */}
-      <div className="w-full max-w-[600px] h-[1px] bg-gradient-to-r from-transparent via-amber-500/25 to-transparent pointer-events-none -mt-4 relative z-10" />
+      {/* Linha de reflexo dourada extremamente sutil na transição suave (descida no mobile para não cortar o vídeo) */}
+      <div className="w-full max-w-[600px] h-[1px] bg-gradient-to-r from-transparent via-amber-500/25 to-transparent pointer-events-none mt-1 md:-mt-4 relative z-10" />
     </div>
   );
 };

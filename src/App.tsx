@@ -23,8 +23,8 @@ export default function App() {
         {/* 1. VÍDEO NO TOPO (Com máscara linear e transição aveludada sem corte seco) */}
         <VideoHeader videoUrl="https://yourimageshare.com/ib/2JH73bL4R1.mp4" />
 
-        {/* 2. INDICADOR DE FUNCIONAMENTO ELEVADO (Subindo para conectar suavemente à base do vídeo) */}
-        <div className="-mt-5 md:-mt-7 relative z-20 w-full flex justify-center">
+        {/* 2. INDICADOR DE FUNCIONAMENTO (Ajustado no mobile para não cobrir o vídeo; desktop inalterado) */}
+        <div className="mt-1 md:-mt-7 relative z-20 w-full flex justify-center">
           <StatusBadge />
         </div>
 
