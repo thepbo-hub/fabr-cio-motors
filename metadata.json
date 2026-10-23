@@ -1,0 +1,6 @@
+{
+  "name": "FABRICIO MOTORS - Biosite Oficial",
+  "description": "Biosite oficial e central de atendimento FABRICIO MOTORS. Excelência, procedência e sofisticação automotiva.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
