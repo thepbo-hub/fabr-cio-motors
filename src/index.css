@@ -26,10 +26,7 @@
   display: flex;
   width: max-content;
   animation: marqueeScroll 32s linear infinite;
-}
-
-.animate-marquee-slow:hover {
-  animation-play-state: paused;
+  pointer-events: none;
 }
 
 /* Animação da Faísca Contínua com intervalo de 4 segundos */

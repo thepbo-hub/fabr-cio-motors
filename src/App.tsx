@@ -20,20 +20,24 @@ export default function App() {
       {/* Conteúdo Principal */}
       <div className="relative z-10 w-full flex flex-col items-center">
         
-        {/* 1. VÍDEO NO TOPO (Mobile tela inteira sem borda preta superior, proporção exata sem cortar a logo + degradê inferior) */}
+        {/* 1. VÍDEO NO TOPO (Com máscara linear e transição aveludada sem corte seco) */}
         <VideoHeader videoUrl="https://yourimageshare.com/ib/2JH73bL4R1.mp4" />
 
-        {/* Bloco Central dos Controles */}
-        <div className="w-full max-w-[500px] px-4 mt-1 flex flex-col items-center">
-          
-          {/* 2. INDICADOR DE FUNCIONAMENTO EM TEMPO REAL (America/Sao_Paulo) */}
+        {/* 2. INDICADOR DE FUNCIONAMENTO ELEVADO (Subindo para conectar suavemente à base do vídeo) */}
+        <div className="-mt-5 md:-mt-7 relative z-20 w-full flex justify-center">
           <StatusBadge />
+        </div>
 
-          {/* 3. FAIXA HORIZONTAL MODERNA COM PALAVRAS-CHAVE PASSANDO EM LOOP INFINITO */}
+        {/* 3. LETREIRO DE PALAVRAS-CHAVE NA HORIZONTAL TODA DA TELA (100% da tela de ponta a ponta) */}
+        <div className="w-full relative z-20">
           <KeywordsMarquee />
+        </div>
 
+        {/* Bloco Central dos Botões e Conteúdo Principal */}
+        <div className="w-full max-w-[500px] px-4 mt-2 flex flex-col items-center">
+          
           {/* 4. OS QUATRO BOTÕES PRINCIPAIS COM EMBLEMAS EM AMARELO PADRÃO */}
-          <main className="w-full flex flex-col items-center gap-3.5 mt-1">
+          <main className="w-full flex flex-col items-center gap-3.5">
             
             {/* BOTÃO 1 — WHATSAPP */}
             <SparkButton
