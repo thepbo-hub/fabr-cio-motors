@@ -6,6 +6,7 @@ import { BackgroundSilhouettes } from './components/BackgroundSilhouettes.tsx';
 import { SparkButton } from './components/SparkButton.tsx';
 import { LocationSection } from './components/LocationSection.tsx';
 import { WifiModal } from './components/WifiModal.tsx';
+import { FloatingReviewButton } from './components/FloatingReviewButton.tsx';
 import { Footer } from './components/Footer.tsx';
 import { Wifi } from 'lucide-react';
 
@@ -39,7 +40,24 @@ export default function App() {
           {/* 4. OS QUATRO BOTÕES PRINCIPAIS COM EMBLEMAS EM AMARELO PADRÃO */}
           <main className="w-full flex flex-col items-center gap-3.5">
             
-            {/* BOTÃO 1 — WHATSAPP */}
+            {/* BOTÃO 1 (DESTAQUE MÁXIMO) — AVALIAÇÃO DO GOOGLE */}
+            <SparkButton
+              label="AVALIE NOSSA EMPRESA"
+              sublabel="Sua avaliação é muito importante"
+              href="https://search.google.com/local/writereview?placeid=ChIJv5LDxHd_mQAR9EBsHJBNuXE"
+              isFeatured={true}
+              badge="★ 5.0"
+              icon={
+                <svg
+                  className="w-7 h-7 text-amber-400 fill-current"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.067 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z" />
+                </svg>
+              }
+            />
+
+            {/* BOTÃO 2 — WHATSAPP */}
             <SparkButton
               label="FALAR NO WHATSAPP"
               sublabel="Atendimento direto e vendas"
@@ -54,7 +72,7 @@ export default function App() {
               }
             />
 
-            {/* BOTÃO 2 — INSTAGRAM */}
+            {/* BOTÃO 3 — INSTAGRAM */}
             <SparkButton
               label="ACOMPANHE NO INSTAGRAM"
               sublabel="@fabricio_motors"
@@ -65,21 +83,6 @@ export default function App() {
                   viewBox="0 0 24 24"
                 >
                   <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-                </svg>
-              }
-            />
-
-            {/* BOTÃO 3 — AVALIAÇÃO DO GOOGLE */}
-            <SparkButton
-              label="AVALIE NOSSA EMPRESA"
-              sublabel="Sua opinião no Google"
-              href="https://search.google.com/local/writereview?placeid=ChIJv5LDxHd_mQAR9EBsHJBNuXE"
-              icon={
-                <svg
-                  className="w-6 h-6 text-amber-400 fill-current"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.067 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z" />
                 </svg>
               }
             />
@@ -106,6 +109,9 @@ export default function App() {
           <Footer />
         </div>
       </div>
+
+      {/* Botão Flutuante de Fácil Acesso ao Google Avaliação (Aparece ao rolar a página) */}
+      <FloatingReviewButton />
 
       {/* Painel Modal de Conexão Wi-Fi */}
       <WifiModal
